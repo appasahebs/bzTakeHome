@@ -9,7 +9,9 @@ Install these following requirement for this project
 - python 3+
 
 ## Clone the code on your local
+
 ```$ git clone git@github.com:appasahebs/bzTakeHome.git ```
+
 ```$ cd bzTakeHome ```
 
 ## Setup and Run application
