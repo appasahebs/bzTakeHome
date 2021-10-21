@@ -1,1 +1,1 @@
-# bzTakeHome - a Django App
+# bzTakeHome - A Django App
