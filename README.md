@@ -35,3 +35,28 @@ and then run containers using ...
 - Next, it will apply migrations
 - and starts app on port - 8000
 
+## Run application as container
+For setting this app as container, we need following steps to implemennted.
+- Create docker image 
+- Push that in remote repository so we can able to pull that for container
+- Deploy code on container
+- Volume mount <deploy code directoy>:/code
+- Expose container port 8000 and map it to container host port 8000
+- Forward alb traffic traffic to 8000 port to access app
+- Meanwhile for app to be access DB, we need to sepecify environment variables and those should be load on container with value.
+
+  ```
+  DATABASE_URL: <db urll>
+  DJANGO_MANAGEPY_MIGRATE: "on"
+  ENGINE: 'django.db.backends.postgresql'
+  NAME: <db name>
+  USER: <db user>
+  PASSWORD: <db user password>
+  HOST: 'db'
+  PORT: <db port>
+
+  ```
+  
+  ## Email me if any issues - appasaheb.sawant@gmail.com
+
+  
