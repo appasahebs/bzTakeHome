@@ -16,6 +16,7 @@ Install these following requirement for this project
 For setting this application, you need to run docker componse build and up command. Which will pull repective docker images and map application code with respective directories.
 
 ```$ docker compose build ```
+
 In this build command, mainly local docker image going to build. It has mainly following steps ... 
 - Pull the remote image for python 3
 - Set workdir - /code
@@ -26,6 +27,7 @@ In this build command, mainly local docker image going to build. It has mainly f
 and then run containers using ...
 
 ```$ docker compose up ```
+
 - Start containers on above build images
 - bzapp container will look for db container started and up running. It will wait until its starts.
 - Next, it will apply migrations
