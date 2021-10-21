@@ -21,6 +21,7 @@ services:
       PASSWORD: 'postgres'
       HOST: 'db'
       PORT: 5432
+      SECRET: django-insecure-v6$s&zm8h7g9=)80nly8q*p+274!4*34rms^)olxb6r)#3p7fx
     volumes:
       - .:/code
     ports:
