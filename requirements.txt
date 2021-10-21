@@ -1,0 +1,7 @@
+Django>=3.0,<4.0
+psycopg2-binary>=2.8
+pandas>=1.3.4
+uwsgi
+pycodestyle
+git-pep8-commit-hook
+flake8

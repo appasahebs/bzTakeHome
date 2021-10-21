@@ -1,0 +1,16 @@
+<h1>Search Articles</h1>
+<form method="GET" action="" id="searchform">
+    <input class="searchfield" id="searchbox" name="q" type="text" value="{{ request.GET.q }}" placeholder="Search..."/>
+</form>
+<p></p>
+<p>
+{% if artilce_list %}
+    <ul>
+    {% for a in artilce_list %}
+        <li><a href="{{ a.url }}" target="_blank">{{ a.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No articles are available.</p>
+{% endif %}
+</p>
