@@ -35,6 +35,12 @@ and then run containers using ...
 - Next, it will apply migrations
 - and starts app on port - 8000
 
+## Access appliction
+
+- Access app as - http://localhost:8000/, It will have search form with list of articles
+- First we need to populate data - http://localhost:8000/backfill this will add test data from csv to db
+
+
 ## Run application as container
 For setting this app as container, we need following steps to implemennted.
 - Create docker image 
